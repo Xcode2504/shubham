@@ -11,9 +11,9 @@ import {
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import FeaturedCategories from '../../components/FeaturedCategories';
-import ProjectCarousel from '../../components/ProjectCarousel';
-import TestimonialCard from '../../components/TestimonialCard';
+import FeaturedCategories from '../../components/FeaturedCategories.tsx';
+import ProjectCarousel from '../../components/ProjectCarousel.tsx';
+import TestimonialCard from '../../components/TestimonialCard.tsx';
 
 const { width } = Dimensions.get('window');
 
