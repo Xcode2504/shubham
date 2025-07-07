@@ -12,8 +12,18 @@ import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
+// Define the type for projects
+type Project = {
+  id: string;
+  title: string;
+  category: string;
+  excerpt: string;
+  image: string;
+  designer: string;
+};
+
 // Mock data for search
-const mockProjects = [
+const mockProjects: Project[] = [
   {
     id: '1',
     title: 'Modern Pendant Collection',
@@ -42,8 +52,9 @@ const mockProjects = [
 
 export default function SearchScreen() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<Project[]>([]);
   const [isSearching, setIsSearching] = useState(false);
+
 
   useEffect(() => {
     if (searchQuery.trim()) {
