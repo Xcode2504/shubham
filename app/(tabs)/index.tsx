@@ -88,7 +88,13 @@ export default function HomeScreen() {
           <Text style={styles.sectionSubtitle}>
             Hear from those who have experienced the Classic Interiors difference
           </Text>
-          <TestimonialCard />
+          <TestimonialCard testimonial={{
+            name: '',
+            role: '',
+            content: '',
+            image: '',
+            date: ''
+          }} />
         </View>
       </ScrollView>
     </SafeAreaView>
