@@ -6,15 +6,14 @@ import { Menu, X, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import SearchResults from '@/components/search-results';
-import { searchProjects } from '@/lib/data';
-// Import the Project type from lib/data to ensure consistency
-import { Project } from '@/lib/data'; // Adjust the import path based on your file structure
+import { searchProjects } from '@/lib/data'; // Ensure this is imported correctly
+import { Project } from '@/lib/data'; // Ensure the Project type is imported correctly
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<Project[]>([]); // Use imported Project type
+  const [searchResults, setSearchResults] = useState<Project[]>([]); // Correct type for searchResults
   const [showResults, setShowResults] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -40,11 +39,11 @@ const Navigation = () => {
 
   useEffect(() => {
     if (searchQuery.trim()) {
-      const results = searchProjects(searchQuery); // Assume searchProjects returns Project[]
+      const results = searchProjects(searchQuery); // Ensure searchProjects returns Project[]
       setSearchResults(results);
       setShowResults(true);
     } else {
-      setSearchResults([]);
+      setSearchResults([]); // Reset search results when search query is empty
       setShowResults(false);
     }
   }, [searchQuery]);
