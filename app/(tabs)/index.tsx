@@ -86,7 +86,7 @@ export default function HomeScreen() {
             Hear from those who have experienced the Classic Interiors difference
           </Text>
           <TestimonialCard />
-        </View> */}
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
