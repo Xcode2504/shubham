@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
   View,
@@ -80,13 +82,15 @@ export default function HomeScreen() {
         </View> */}
 
         {/* Testimonials - Removed */}
-        {/* <View style={[styles.section, styles.testimonialsSection]}>
+        {/* 
+        <View style={[styles.section, styles.testimonialsSection]}>
           <Text style={styles.sectionTitle}>What Our Clients Say</Text>
           <Text style={styles.sectionSubtitle}>
             Hear from those who have experienced the Classic Interiors difference
           </Text>
           <TestimonialCard />
-        </View>
+        </View> 
+        */}
       </ScrollView>
     </SafeAreaView>
   );

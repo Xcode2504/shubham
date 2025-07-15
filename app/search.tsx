@@ -12,6 +12,9 @@ import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
+// Import the Project type from the correct path
+import { Project } from './src/types'; // Adjust the path based on where you created the types file
+
 // Mock data for search
 const mockProjects: Project[] = [
   {
@@ -42,9 +45,8 @@ const mockProjects: Project[] = [
 
 export default function SearchScreen() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<Project[]>([]); // Correct type for searchResults
   const [isSearching, setIsSearching] = useState(false);
-
 
   useEffect(() => {
     if (searchQuery.trim()) {
@@ -57,7 +59,7 @@ export default function SearchScreen() {
           project.designer.toLowerCase().includes(searchQuery.toLowerCase()) ||
           project.category.toLowerCase().includes(searchQuery.toLowerCase())
         );
-        setSearchResults(results);  // This now works because the state is correctly typed
+        setSearchResults(results);
         setIsSearching(false);
       }, 300);
 
