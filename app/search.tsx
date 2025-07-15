@@ -12,8 +12,18 @@ import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
+// Define the Project type for the mock data
+type Project = {
+  id: string;
+  title: string;
+  category: string;
+  excerpt: string;
+  image: string;
+  designer: string;
+};
+
 // Mock data for search
-const mockProjects = [
+const mockProjects: Project[] = [
   {
     id: '1',
     title: 'Modern Pendant Collection',
@@ -42,7 +52,7 @@ const mockProjects = [
 
 export default function SearchScreen() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<Project[]>([]); // Explicitly type as Project array
   const [isSearching, setIsSearching] = useState(false);
 
   useEffect(() => {
@@ -50,19 +60,19 @@ export default function SearchScreen() {
       setIsSearching(true);
       // Simulate search delay
       const timer = setTimeout(() => {
-        const results = mockProjects.filter(project =>
+        const results = mockProjects.filter((project) =>
           project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
           project.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
           project.designer.toLowerCase().includes(searchQuery.toLowerCase()) ||
           project.category.toLowerCase().includes(searchQuery.toLowerCase())
         );
-        setSearchResults(results);
+        setSearchResults(results);  // This now works because the state is correctly typed
         setIsSearching(false);
       }, 300);
 
       return () => clearTimeout(timer);
     } else {
-      setSearchResults([]);
+      setSearchResults([]);  // Empty the results when searchQuery is empty
       setIsSearching(false);
     }
   }, [searchQuery]);

@@ -11,9 +11,6 @@ import {
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import FeaturedCategories from '../../components/FeaturedCategories';
-import ProjectCarousel from '../../components/ProjectCarousel';
-import TestimonialCard from '../../components/TestimonialCard';
 
 const { width } = Dimensions.get('window');
 
@@ -64,32 +61,32 @@ export default function HomeScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Featured Categories */}
-        <View style={styles.section}>
+        {/* Featured Categories - Removed */}
+        {/* <View style={styles.section}>
           <Text style={styles.sectionTitle}>Explore Our Collections</Text>
           <Text style={styles.sectionSubtitle}>
             Discover our carefully curated categories of interior design elements
           </Text>
           <FeaturedCategories />
-        </View>
+        </View> */}
 
-        {/* Recent Projects */}
-        <View style={styles.section}>
+        {/* Recent Projects - Removed */}
+        {/* <View style={styles.section}>
           <Text style={styles.sectionTitle}>Recent Projects</Text>
           <Text style={styles.sectionSubtitle}>
             Explore our latest interior design projects
           </Text>
           <ProjectCarousel />
-        </View>
+        </View> */}
 
-        {/* Testimonials */}
-        <View style={[styles.section, styles.testimonialsSection]}>
+        {/* Testimonials - Removed */}
+        {/* <View style={[styles.section, styles.testimonialsSection]}>
           <Text style={styles.sectionTitle}>What Our Clients Say</Text>
           <Text style={styles.sectionSubtitle}>
             Hear from those who have experienced the Classic Interiors difference
           </Text>
           <TestimonialCard />
-        </View>
+        </View> */}
       </ScrollView>
     </SafeAreaView>
   );
