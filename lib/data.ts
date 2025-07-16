@@ -49,7 +49,7 @@ export const projects: Project[] = [
       
       <p>This room design promotes learning about wildlife while providing a comfortable and inspiring space for rest and play. The natural wood elements and earthy color palette create a calming environment perfect for bedtime stories.</p>
     `,
-    image: '/assets/WhatsApp Image 2025-07-01 at 4.43.16 PM (1).jpeg',
+    image: '/assets/safarikids.jpeg',
     designer: 'Priya Mehta',
     date: '2025-01-15',
     featured: true
@@ -75,7 +75,7 @@ export const projects: Project[] = [
       
       <p>Perfect for creating a focal point in living rooms, bedrooms, or office spaces, this artwork brings the tranquil beauty of the jungle indoors while maintaining sophisticated elegance.</p>
     `,
-    image: '/assets/WhatsApp Image 2025-07-01 at 4.43.16 PM.jpeg',
+    image: '/assets/leopard.jpeg',
     designer: 'Arjun Singh',
     date: '2025-01-20',
     featured: true
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       
       <p>This design proves that bold color choices can create sophisticated and luxurious spaces when executed with precision and attention to detail.</p>
     `,
-    image: '/assets/WhatsApp Image 2025-07-01 at 4.43.15 PM (2).jpeg',
+    image: '/assets/redbathroom.jpeg',
     designer: 'Kavya Patel',
     date: '2025-01-25',
     featured: true
@@ -127,7 +127,7 @@ export const projects: Project[] = [
       
       <p>This powder room demonstrates how small spaces can make big impressions through bold design choices and meticulous attention to detail.</p>
     `,
-    image: '/assets/WhatsApp Image 2025-07-01 at 4.43.15 PM (1).jpeg',
+    image: '/assets/mosaic.jpeg',
     designer: 'Ashish Gupta',
     date: '2025-02-01',
     featured: false
@@ -153,7 +153,7 @@ export const projects: Project[] = [
       
       <p>This reading nook exemplifies how thoughtful design can create intimate spaces for relaxation within larger rooms, promoting wellness and mindful living.</p>
     `,
-    image: '/assets/WhatsApp Image 2025-07-01 at 4.43.15 PM.jpeg',
+    image: 'assets/reading.jpeg',
     designer: 'Rajesh Sharma',
     date: '2025-02-05',
     featured: false
@@ -204,7 +204,7 @@ export const projects: Project[] = [
       
       <p>This kitchen design proves that luxury and functionality can coexist beautifully, creating a space that's both practical for daily use and impressive for entertaining.</p>
     `,
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: 'assets/kitchen-31.jpg',
     designer: 'Design Team',
     date: '2025-02-10',
     featured: true

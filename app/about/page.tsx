@@ -88,7 +88,7 @@ export default function AboutPage() {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="assets/kitchen-31.jpg"
               alt="Our design studio"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />
