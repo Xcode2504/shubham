@@ -56,7 +56,7 @@ export default function HomeScreen() {
         {/* Logo Section - Display the App Icon/Logo */}
         <View style={styles.logoContainer}>
           <Image
-            source={require('assets/favicon.png')}  // Path to the logo (use relative path)
+            source={require('assets/favicon.jpg')}  // Path to the logo (use relative path)
             style={styles.logo}
           />
         </View>
