@@ -9,6 +9,7 @@ import {
   ImageBackground,
   TouchableOpacity,
   Dimensions,
+  Image,  // Import the Image component
 } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -51,6 +52,14 @@ export default function HomeScreen() {
             </View>
           </View>
         </ImageBackground>
+
+        {/* Logo Section - Display the App Icon/Logo */}
+        <View style={styles.logoContainer}>
+          <Image
+            source={require('assets/favicon.png')}  // Path to the logo (use relative path)
+            style={styles.logo}
+          />
+        </View>
 
         {/* Search Bar */}
         <View style={styles.searchContainer}>
@@ -187,6 +196,15 @@ const styles = StyleSheet.create({
     color: '#6b7280',
     fontSize: 16,
     flex: 1,
+  },
+  logoContainer: {
+    alignItems: 'center',
+    paddingVertical: 20,
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    resizeMode: 'contain',
   },
   section: {
     paddingHorizontal: 20,

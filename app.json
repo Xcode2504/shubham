@@ -4,34 +4,41 @@
     "slug": "Classic-interiors",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/favicon.png",  
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/splash.png",  
+      "resizeMode": "contain",         
+      "backgroundColor": "#ffffff"    
     },
     "assetBundlePatterns": [
-      "**/*"
+      "**/*"  
     ],
+    
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.Classicinteriors.app"
+      "bundleIdentifier": "com.Classicinteriors.app", 
+      "buildNumber": "1.0.0"  
     },
+    
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/adaptive-icon.png",  
+        "backgroundColor": "#ffffff"  
       },
-      "package": "com.Classicinteriors.app"
+      "package": "com.Classicinteriors.app",  
+      "versionCode": 1  
     },
+    
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "favicon": "./assets/favicon.png",  
+      "bundler": "metro"  
     },
+    
     "plugins": [
-      "expo-router"
+      "expo-router"  
     ],
-    "scheme": "Classic-interiors"
+    
+    "scheme": "Classic-interiors"  
   }
 }
